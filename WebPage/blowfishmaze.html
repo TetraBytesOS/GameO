@@ -70,14 +70,16 @@ Este minijuego se basa en una matriz 2D que representa un océano donde un pez g
 <p>o Se pide al usuario una dirección de movimiento (W, A, S, D).
 <p>o Se intenta mover el pez. Si el movimiento es válido (sin chocar con los obstáculos (X) o salirse de los límites), el pez se mueve.
 <p>o Si el movimiento es inválido, se muestra un mensaje de advertencia.
+<p>o El objetivo es alcanzar C evitando X.</p>
 3. Movimiento del Pez globo
 <p>o Se calcula la nueva posición según la entrada del usuario.</p>
 <p>o Se verifica si la nueva posición está dentro del área y no hay un obstáculo (X).</p>
 <p>o Si el movimiento es válido, el pez deja su posición anterior ('-') y se mueve.</p>
-<p>o Usuario ingresa S → El pez se mueve abajo.</p>
-<p>o Usuario ingresa D → Movimiento válido.</p>
-<p>o Usuario ingresa D nuevamente → Movimiento inválido (obstáculo X).</p>
-<p>o El objetivo es alcanzar C evitando X.</p>
+<p>o Si el jugador presiona W → El pez se mueve hacia arriba</p>
+<p>o Si el jugador presiona A → El pez se mueve hacia la izquierda.</p>
+<p>o Si el jugador presiona S → El pez se mueve hacia abajo.</p>
+<p>o Si el jugador presiona D → El pez se mueve hacia la derecha.</p>
+<p>o Si el jugador presiona (WASD) hacia una X → Movimiento inválido (obstáculo X).</p>
 </font>
 </div>
 
