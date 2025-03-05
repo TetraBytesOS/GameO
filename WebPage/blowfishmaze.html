@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 22%;
+  background-color: #2f2f2f;
+  position: fixed;
+  height: 32%;
+  overflow: auto;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #2f2f2f;
+  color: red;
+}
+
+li a:hover:not(.active) {
+  background-color: #ff4322;
+  color: red;
+}
+</style>
+</head>
+<body bgcolor="black">
+<UL><font color="#d600d7">
+<LI><a href="mainpage.html"><font color="#5bdcfa"> Main Game </font></a></li>
+<LI><p><a href="tamagochi.html"><font color="#5bdcfa"> Minigame1. </font></a></p>
+<LI><p><a class="active"><b> Minigame2. </b></a></p>
+<LI><p><a href="download.html"><font color="#5bdcfa"> Downloads. </font></a></p>
+</UL></font>
+
+
+<center><h1><font color="#fffff"><b> Minigame2(Maze) </font></b></h1></center>
+<div style="margin-left:22%;padding:1px 16px;height:500px;">
+<h2><font color="#fffff"> Info </h2>
+<h3>Lógica del juego</h3>
+Este minijuego se basa en una matriz 2D que representa un océano donde un pez globo (P) debe moverse hasta alcanzar la comida (C), el pez debe evitar los obstáculos (X). El jugador controla el pez ingresando las teclas W, A, S, D para moverse en diferentes direcciones.
+<h3>Como funciona</h3>
+1. Inicialización:
+<p>o Se define un océano como una matriz de 5x5.</p>
+<p>o El pez (P) comienza en una posición. (matriz)</p>
+<p>o Los obstáculos (X) están colocados estratégicamente.</p>
+<p>o La comida (C) está en un lugar del entorno (matriz).</p>
+2. Ciclo de Juego
+<p>o Se muestra el estado actual del océano en la consola.
+<p>o Se verifica si el pez ha llegado a la comida (C). Si es así, el juego termina con un mensaje de ganador
+<p>o Se pide al usuario una dirección de movimiento (W, A, S, D).
+<p>o Se intenta mover el pez. Si el movimiento es válido (sin chocar con los obstáculos (X) o salirse de los límites), el pez se mueve.
+<p>o Si el movimiento es inválido, se muestra un mensaje de advertencia.
+3. Movimiento del Pez globo
+<p>o Se calcula la nueva posición según la entrada del usuario.</p>
+<p>o Se verifica si la nueva posición está dentro del área y no hay un obstáculo (X).</p>
+<p>o Si el movimiento es válido, el pez deja su posición anterior ('-') y se mueve.</p>
+<p>o Usuario ingresa S → El pez se mueve abajo.</p>
+<p>o Usuario ingresa D → Movimiento válido.</p>
+<p>o Usuario ingresa D nuevamente → Movimiento inválido (obstáculo X).</p>
+<p>o El objetivo es alcanzar C evitando X.</p>
+</font>
+</div>
+
+</body>
+</html>
