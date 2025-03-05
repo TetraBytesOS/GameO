@@ -5,3 +5,4 @@ This proyect is still in a very early stage of development, we plan to expand it
 * Download
 * Instal Java
 * Run Game
+## Eduardo Ángeles, Sergio Herrero, Alonso Malvar, Yina Parra, Marcela Herrera
