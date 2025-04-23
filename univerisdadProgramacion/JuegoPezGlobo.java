@@ -66,10 +66,14 @@ public class JuegoPezGlobo { /*defino el tamaño del oceano */
 
         /* Lista de obstáculos  en posiciones fijas (X)*/
         obstaculos = new ArrayList<>();
-        agregarObstaculo(1, 2);
-        agregarObstaculo(2, 2);
+        agregarObstaculo(1, 1);
+        agregarObstaculo(2, 1);
         agregarObstaculo(3, 1);
         agregarObstaculo(4, 3);
+        agregarObstaculo(0, 1);
+        agregarObstaculo(2, 3);
+        agregarObstaculo(2, 4);
+        agregarObstaculo(2, 2);
 
         /* Colocar la comida en una Posición especifica (C)*/
         comidaFila = 4;
